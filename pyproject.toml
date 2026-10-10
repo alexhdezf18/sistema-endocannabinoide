@@ -1,7 +1,7 @@
 [project]
 name = "sistema-endocannabinoide"
 version = "0.1.0"
-description = "Add your description here"
+description = "Mapa y modelo del sistema endocannabinoide humano"
 authors = [
     { name = "Alex Hernandez", email = "alexhdezf18@gmail.com" }
 ]
