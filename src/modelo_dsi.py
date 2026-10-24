@@ -84,7 +84,7 @@ def simular(p: Parametros, duracion_pulso=5.0, t_final=90.0, dt=0.05):
         y0 = sol.y[:, -1]
     t = np.concatenate(ts)
     ca, e, a = np.concatenate(ys, axis=1)
-    base = 1 = supresion(*estado_basal(p)[1:], p)
+    base = 1 - supresion(*estado_basal(p)[1:], p)
     ipsc = (1 - supresion(e, a, p)) / base # relativo a los IPSC de antes del pulso
     return {"t": t, "ca": ca, "2ag": e, "aea": a, "ipsc": ipsc}
 
